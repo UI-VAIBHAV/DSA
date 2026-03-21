@@ -3,5 +3,5 @@ select e.employee_id,e.name,count(*) as reports_count,round(avg(r.age),0) as ave
 from employees e
 join employees r
 on e.employee_id = r.reports_to
-group by e.employee_id,e.name
+group by e.employee_id
 order by e.employee_id;
