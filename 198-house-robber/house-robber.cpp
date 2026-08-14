@@ -8,7 +8,7 @@ public:
         return dp[idx] = max(take,skip);
     }
     int rob(vector<int>& nums) {
-        vector<int>dp(nums.size(),-1);
+        vector<int>dp(nums.size()+1,-1);
         return count(nums,dp,0);
     }
 };
