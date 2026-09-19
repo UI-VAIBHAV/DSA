@@ -6,7 +6,7 @@ public:
         for(int i=1;i<=nums[idx];i++){
             if(check(nums,dp,n,idx+i)) return dp[idx] = 1;
         }
-        return dp[idx] =  0;
+        return dp[idx] = 0;
     }
     bool canJump(vector<int>& nums) {
         int n = nums.size();
